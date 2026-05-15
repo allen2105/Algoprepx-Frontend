@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>User registration form:</h1>
+    <form>
+      <label for="Fname">Full Name</label>
+      <input type="text" id="Fname" placeholder="Jhon Doe" required />
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="johndoe@gmail.com" required />
+      <br /><br />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Password" required />
+      <br /><br />
+
+      <label for="Cpassword">Confirm Password:</label>
+      <input type="password" id="Cpassword" placeholder="Password" required />
+      <br /><br />
+
+      <label for="date">Date of Birth:</label>
+      <input
+        type="text"
+        id="date"
+        placeholder="YYYY-MM-DD"
+        pattern="\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])"
+        required
+      />
+      <br /><br />
+
+      <label for="phone">Phone Number:</label>
+      <input
+        type="text"
+        id="phone"
+        placeholder="9999999999"
+        pattern="[6-9]\d{9}"
+        required
+      />
+      <br /><br />
+
+      <label for="credit">Credit Card Number:</label>
+      <input
+        type="text"
+        id="credit"
+        placeholder="1111222233334444"
+        pattern="\d{16}"
+        required
+      />
+      <br /><br />
+
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="john91"
+        pattern="[a-zA-Z0-9]+"
+        required
+      />
+      <br /><br />
+
+      <label for="url">Website URL:</label>
+      <input
+        type="text"
+        id="url"
+        placeholder="https://www.google.com/"
+        pattern="https?://.+"
+        required
+      />
+      <br /><br />
+
+      <label for="Comments">Comments</label>
+      <textarea id="Comments" placeholder="Your comments" required></textarea>
+      <br><br>
+
+      <label for="select">Country:</label>
+      <select id="select" required>
+            <option>India</option>
+            <option selected>Japan</option>
+            <option>US</option>
+        </select>
+        <br><br>
+
+      <fieldset>
+        <legend>Choose your plan:</legend>
+        <input type="radio" value="option1" id="option1" name="plan">
+        <label for="option1">One time</label>
+
+        <input type="radio" value="option2" id="option2" name="plan" checked>
+        <label for="option2">Monthly</label>
+      </fieldset>
+
+      <br><br>
+      <label for="volume">Volume:</label>
+      <input type="range" name="volume" id="volume" min="0" max="100">
+
+      <br><br>
+      <input type="reset" name="" id="">
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
